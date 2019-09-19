@@ -1,0 +1,30 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "required": true
+    },
+    "CHAT_ID": {
+      "required": true
+    },
+    "TEST_CHAT_ID": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "BINANCE1122",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
